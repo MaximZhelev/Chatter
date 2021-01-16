@@ -11,12 +11,6 @@ type PropsMessage = {
   _id: string;
   date: string;
 };
-interface IRootState {
-  auth: {
-    username: string;
-    image: string;
-  };
-}
 
 
 
