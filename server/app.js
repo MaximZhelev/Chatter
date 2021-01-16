@@ -108,6 +108,8 @@ mongoose
     );
   })
   .catch((error) => console.log("Could not start server: ", error));
+//This is test route to check if it works.
 app.get('/abc', (req,res) => {
+
   res.send("<h1>Hello</h1>") 
 })
