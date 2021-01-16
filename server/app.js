@@ -10,7 +10,7 @@ const usersRoute = require("./routes/users-route");
 const groupsRoute = require("./routes/groups-route");
 const messagesRoute = require("./routes/messages-route");
 
-const { upload } = require("./utils/image");
+const { upload } = require("./utils/image"); 
 
 const app = express();
 app.use(express.json());
