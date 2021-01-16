@@ -1,6 +1,5 @@
 import React from 'react';
 import CircularProgress from '@material-ui/core/CircularProgress';
-import { useSelector } from 'react-redux';
 
 // Local Imports
 import styles from './styles.module.scss';
@@ -11,20 +10,14 @@ type MemberProps = {
   image: string;
 };
 
-interface IRootState {
-  auth: {
-    username: string;
-    image: string;
-  };
-}
+
 
 
 const Member: React.FC<MemberProps> = props => {
-  const { username,image } = useSelector((state: IRootState) => state.auth);
   return (
     <div className={styles.member}>
-      <img className={styles.image} alt="User" src={image} />
-      <p className={styles.username}>{username}</p>
+      <img className={styles.image} alt="User" src={props.image} />
+      <p className={styles.username}>{props.username}</p>
     </div>
   );
 };

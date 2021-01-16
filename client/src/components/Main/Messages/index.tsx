@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { CircularProgress } from '@material-ui/core';
-import { useSelector } from 'react-redux';
 
 // Local Imports
 import styles from './styles.module.scss';
@@ -22,13 +21,12 @@ interface IRootState {
 
 
 const Message: React.FC<PropsMessage> = props => {
-  const { username,image } = useSelector((state: IRootState) => state.auth);
   return (
     <div className={styles.messageContainer}>
-      <img className={styles.image} alt="User" src={image} />
+      <img className={styles.image} alt="User" src={props.image} />
       <div className={styles.textBox}>
         <p className={styles.username}>
-          {username} <span className={styles.date}>{props.date}</span>
+          {props.username} <span className={styles.date}>{props.date}</span>
         </p>
         <p className={styles.message}>{props.text}</p>
       </div>
