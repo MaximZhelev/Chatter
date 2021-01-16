@@ -2,7 +2,7 @@
 
 <h2>Introduction</h2>
 <p>This is an instant messaging webapp built from scratch. </p>
-<p>Have a look to the <a href="https://chatter-project.netlify.app" target="blank">live version</a> </p>
+<p>Have a look to the <a href="https://chatter-project.netlify.app" target="_blank">live version</a> </p>
 
 
 <h2>Table of Contents</h2>
