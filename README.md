@@ -1,4 +1,4 @@
-<h1>Chat</h1>
+<h1>Chatter</h1>
 
 <h2>Introduction</h2>
 <p>This is an instant messaging webapp built from scratch. </p>
